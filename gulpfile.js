@@ -21,7 +21,7 @@ const gulp = require('gulp'), // Подключаем Gulp
 const path = {
   src: {
     sass: 'app/sass/**/*.sass',
-    pug: 'app/pug/index.pug',
+    pug: 'app/pug/pages/*.pug',
     img: 'app/img/**/*'
   },
   root: 'app'

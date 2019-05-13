@@ -11,66 +11,71 @@
 		margin-top: rem(5px)
 
 .secondPage__img img
+	width: 100%
+	height: 100vh
 	+media(tablet)
 		width: 100%
 		height: 35vh
 
 .generator
-	+media(tablet)
-		border-top: rem(6px) #0067b2 solid
-		border-bottom: rem(6px) #0067b2 solid
+	border-bottom: rem(6px) #0067b2 solid
+	border-top: rem(6px) #0067b2 solid
 
 .page__navigation
-	+media(tablet)
-		margin-top: rem(10px)
-		text-transform: uppercase
-		display: flex
-		justify-content: center
-		flex-wrap: wrap
+	display: flex
+	margin-top: rem(10px)
+	text-transform: uppercase
+	flex-wrap: wrap
+	justify-content: center
+
 
 .page__navigation_item
+	display: inline
+	font-size: rem(16px)
 	+media(tablet)
 		font-size: rem(14px)
-		display: inline
 	+media(phone)
 		font-size: rem(12px)
 
 .page__navigation_link
-	+media(tablet)
-		color: #000
-		cursor: pointer
-		font-weight: bold
+	color: #000
+	cursor: pointer
+	font-weight: bold
 
 .generator__title
+	text-align: center
+	font-size: rem(56px)
 	+media(tablet)
-		text-align: center
+		font-size: rem(32px)
 
 .generator__navigation
+	display: flex
+	justify-content: center
+	font-size: rem(17px)
 	+media(tablet)
 		margin-bottom: rem(10px)
-		display: flex
-		justify-content: center
 		font-size: rem(13px)
 
 .generator__navigation_item--active
+	color: #16a085
+	text-decoration: underline
 	+media(tablet)
-		color: #16a085
-		text-decoration: underline
 
 .generator__navigation_item
+	color: #474747
+	margin-left: rem(30px)
 	+media(tablet)
-		color: #474747
 		margin-left: rem(7px)
 
 .generator__info
+	border: 1px #0066b1 solid
 	+media(tablet)
-		border: 1px #0066b1 solid
 		padding: rem(15px)
 
 .generator__item
+	display: flex
+	border: 1px #0066b1 solid
 	+media(tablet)
-		border: 1px #0066b1 solid
-		display: flex
 		flex-flow: column
 		justify-content: center
 		text-transform: uppercase
@@ -78,6 +83,7 @@
 
 
 .generator__img img
+	width: 100px
 	+media(tablet)
 		display: block
 		margin: 0 auto
@@ -93,11 +99,13 @@
 		text-align: center
 
 .generator__model_text
+	display: none
 	+media(tablet)
 		text-transform: uppercase
 		color: #6D6E7A
 
 .generator__item_title
+	display: none
 	+media(tablet)
 		text-align: center
 		color: #0066b1
@@ -118,11 +126,16 @@
 		padding: 0 rem(13px)
 
 .generator__item_hz
+	display: none
 	+media(tablet)
 		text-align: center
 		font-size: rem(15px)
 		color: #6D6E7A
 		font-weight: normal
+
+.generator__engine_name
+	+media(tablet)
+		display: none
 
 .generator__buttons
 	+media(tablet)
@@ -154,6 +167,7 @@
 	margin: 20px 0
 
 .switching__list
+	list-style-type: none
 	color: #0066B1
 	+media(tablet)
 		display: flex
