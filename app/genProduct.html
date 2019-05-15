@@ -93,48 +93,63 @@
 						<nav class="generator__navigation"><a class="generator__navigation_item--active" href="#">Выбрать все</a><a class="generator__navigation_item" href="#">0-20 kVA</a><a class="generator__navigation_item" href="#">21-75 kVA</a><a class="generator__navigation_item" href="#">76-200 kVA</a><a class="generator__navigation_item" href="#">201-400 kVA</a><a class="generator__navigation_item" href="#">401-999 kVA</a><a class="generator__navigation_item" href="#">1000 kVA Выше</a></nav>
 					</div>
 				</div>
-				<div class="generator__info">
-					<ul class="generator__list">
-						<li class="generator__item">
-							<div class="custom-control custom-checkbox custom-checkbox-a">
-								<input class="custom-control-input" id="defaultChecked2" type="checkbox" checked=""/>
-								<label class="custom-control-label" for="defaultChecked2">СРАВНИТЬ</label>
-							</div><a class="generator__img" href="#"><img class="generator__img" src="../img/model/APD 17A-6.jpg" alt=""/></a>
-							<div class="generator__model"><span class="generator__model_text">model: </span><a class="generator__model_name" href="#">APD 12 A</a></div>
-							<h3 class="generator__item_title">ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ</h3>
-							<div class="extra__power"><span class="extra__power_kva">11,50 kVA</span><span class="extra__power_kw">9,20 kW</span></div>
-							<h3 class="generator__item_title">Основная мощность</h3>
-							<div class="extra__power"><span class="extra__power_kva">10,60 kVA</span><span class="extra__power_kw">8,48 kW</span></div>
-							<h3 class="generator__item_hz">50 hz</h3>
-							<h3 class="generator__item_hz">Двигатель: АКSA</h3><span class="generator__engine_name">AKSA</span>
-							<div class="generator__buttons"><a class="btn__icons" href="#"><i class="fa fa-eye"></i></a><a class="btn__icons" href="#"><i class="fa fa-arrow-circle-down"></i></a><a class="btn__get" href="#">Get an Offer</a></div>
-						</li>
-						<li class="generator__item">
-							<div class="custom-control custom-checkbox custom-checkbox-a">
-								<input class="custom-control-input" id="defaultChecked2" type="checkbox" checked=""/>
-								<label class="custom-control-label" for="defaultChecked2">СРАВНИТЬ</label>
-							</div><a class="generator__img" href="#"><img class="generator__img" src="../img/model/APD 17A-6.jpg" alt=""/></a>
-							<div class="generator__model"><span class="generator__model_text">model: </span><a class="generator__model_name" href="#">APD 12 A</a></div>
-							<h3 class="generator__item_title">ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ</h3>
-							<div class="extra__power"><span class="extra__power_kva">11,50 kVA</span><span class="extra__power_kw">9,20 kW</span></div>
-							<h3 class="generator__item_title">Основная мощность</h3>
-							<div class="extra__power"><span class="extra__power_kva">10,60 kVA</span><span class="extra__power_kw">8,48 kW</span></div>
-							<h3 class="generator__item_hz">50 hz</h3>
-							<h3 class="generator__item_hz">Двигатель: АКSA</h3>
-							<div class="generator__buttons"><a class="btn__icons" href="#"><i class="fa fa-eye"></i></a><a class="btn__icons" href="#"><i class="fa fa-arrow-circle-down"></i></a><a class="btn__get" href="#">Get an Offer</a></div>
-						</li>
-					</ul>
+				<div class="container">
+					<div class="generator__info">
+						<div class="generator__titles">
+							<select class="generator__select" name="quantity">
+								<option value="">20</option>
+								<option value="">50</option>
+								<option value="">Выбрать все</option>
+							</select>
+							<h2 class="generator__model_title">MODEL</h2>
+							<div class="generator__power"><span class="generator__power_title">дополнительная мощность</span><span class="generator__power_kva">kva</span><span class="generator__power_kw">kw</span></div>
+							<div class="generator__power"><span class="generator__power_title">дополнительная мощность</span><span class="generator__power_kva">kva</span><span class="generator__power_kw">kw</span></div>
+							<h2 class="generator__model_title">hz</h2>
+							<h2 class="generator__model_title">Двигатель</h2>
+							<h2 class="generator__model_title">Более подробная информация</h2>
+						</div>
+						<ul class="generator__list">
+							<li class="generator__item">
+								<div class="desktop__block">
+									<div class="custom-control custom-checkbox custom-checkbox-a">
+										<input class="custom-control-input" id="defaultChecked2" type="checkbox" checked=""/>
+										<label class="custom-control-label" for="defaultChecked2"><span class="compare">СРАВНИТЬ</span></label>
+									</div><a class="generator__img" href="#"><img src="../img/model/APD 17A-6.jpg" alt=""/></a>
+								</div>
+								<div class="generator__model"><a class="generator__model_name" href="#">APD 12 A</a></div>
+								<div class="extra__power"><span class="extra__power_kva">11,50 kVA</span><span class="extra__power_kw">9,20 kW</span></div>
+								<div class="extra__power"><span class="extra__power_kva">10,60 kVA</span><span class="extra__power_kw">8,48 kW</span></div><span class="generator__engine_name">50</span><span class="generator__engine_name">AKSA</span>
+								<div class="generator__buttons"><a class="btn__icons" href="#"><i class="fa fa-eye"></i></a><a class="btn__icons" href="#"><i class="fa fa-arrow-circle-down"></i></a><a class="btn__get" href="#">Get an Offer</a></div>
+							</li>
+							<li class="generator__item">
+								<div class="desktop__block">
+									<div class="custom-control custom-checkbox custom-checkbox-a">
+										<input class="custom-control-input" id="defaultChecked2" type="checkbox" checked=""/>
+										<label class="custom-control-label" for="defaultChecked2"><span class="compare">СРАВНИТЬ</span></label>
+									</div><a class="generator__img" href="#"><img src="../img/model/APD 17A-6.jpg" alt=""/></a>
+								</div>
+								<div class="generator__model"><span class="generator__model_text">model: </span><a class="generator__model_name" href="#">APD 12 A</a></div>
+								<h3 class="generator__item_title">ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ</h3>
+								<div class="extra__power"><span class="extra__power_kva">11,50 kVA</span><span class="extra__power_kw">9,20 kW</span></div>
+								<h3 class="generator__item_title">Основная мощность</h3>
+								<div class="extra__power"><span class="extra__power_kva">10,60 kVA</span><span class="extra__power_kw">8,48 kW</span></div>
+								<h3 class="generator__item_hz">50 hz</h3>
+								<h3 class="generator__item_hz">Двигатель: АКSA</h3><span class="generator__engine_name">50</span><span class="generator__engine_name">AKSA</span>
+								<div class="generator__buttons"><a class="btn__icons" href="#"><i class="fa fa-eye"></i></a><a class="btn__icons" href="#"><i class="fa fa-arrow-circle-down"></i></a><a class="btn__get" href="#">Get an Offer</a></div>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<div class="page__switching">
 					<ul class="switching__list">
-						<li class="switching__item switching__item_active">1</li>
-						<li class="switching__item">2</li>
-						<li class="switching__item">3</li>
-						<li class="switching__item">4</li>
-						<li class="switching__item">5</li>
-						<li class="switching__item">6</li>
-						<li class="switching__item">7</li>
-						<li class="switching__item switching__item_active">8 &#62;</li>
+						<li class="switching__item switching__item_active"> <a class="switching__item_link" href="#">1</a></li>
+						<li class="switching__item"> <a class="switching__item_link" href="#">2</a></li>
+						<li class="switching__item"> <a class="switching__item_link" href="#">3</a></li>
+						<li class="switching__item"> <a class="switching__item_link" href="#">4</a></li>
+						<li class="switching__item"> <a class="switching__item_link" href="#">5</a></li>
+						<li class="switching__item"> <a class="switching__item_link" href="#">6</a></li>
+						<li class="switching__item"> <a class="switching__item_link" href="#">7</a></li>
+						<li class="switching__item switching__item_active"> <a class="switching__item_link" href="#">8 &#62;</a></li>
 					</ul>
 				</div>
 			</section>
