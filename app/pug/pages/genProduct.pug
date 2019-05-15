@@ -42,25 +42,30 @@ html(lang="en")
 							a.generator__navigation_item(href="#") 1000 kVA Выше
 				.container
 					.generator__info
-						.generator__titles
-							select.generator__select(name="quantity")
-								option(value="") 20
-								option(value="") 50
-								option(value="") Выбрать все
-							h2.generator__model_title MODEL
-							.generator__power
-								span.generator__power_title дополнительная мощность
-								span.generator__power_kva kva
-								span.generator__power_kw kw
-							.generator__power
-								span.generator__power_title дополнительная мощность
-								span.generator__power_kva kva
-								span.generator__power_kw kw
-							h2.generator__model_title hz
-							h2.generator__model_title Двигатель
-							h2.generator__model_title Более подробная информация
-							
 						ul.generator__list
+							li.generator__item
+								select.generator__select(name="quantity")
+									option(value="") 20
+									option(value="") 50
+									option(value="") Выбрать все
+								h2.generator__model_title MODEL
+								.generator__power
+									span.generator__power_title 
+										|дополнительная
+										br
+										|мощность
+									span.generator__power_kva kva
+									span.generator__power_kw kw
+								.generator__power
+									span.generator__power_title 
+										|Основная
+										br
+										|мощность
+									span.generator__power_kva kva
+									span.generator__power_kw kw
+								h2.generator__model_title hz
+								h2.generator__model_title Двигатель
+								h2.generator__model_title Более подробная информация
 							li.generator__item
 									.desktop__block
 										.custom-control.custom-checkbox.custom-checkbox-a

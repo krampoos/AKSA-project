@@ -73,21 +73,13 @@
 	margin-top: 20px
 	+media(tablet)
 		padding: rem(15px)
-.generator__titles
-	// display: flex
-	// justify-content: space-around
-	// text-align: center
-	display: grid
-	grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr 2fr
-	justify-items: start
-	+media(tablet)
-		display: none
 
 .generator__select
 	width: 60%
 	height: 50%
 
 .generator__model_title
+	padding-right: 40px
 	text-align: center
 	color: #0066b1
 	font-weight: bold
@@ -97,11 +89,13 @@
 	padding: 0
 
 .generator__power
+	padding-right: 40px
 	display: flex
 	justify-content: space-around
 	flex-wrap: wrap
 
 .generator__power_title
+	width: 100%
 	text-align: center
 	color: #0066b1
 	font-weight: bold
@@ -121,7 +115,7 @@
 	// justify-content: space-around
 	// align-items: center
 	display: grid
-	grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr 2fr
+	grid-template-columns: 1fr 1fr 3fr 3fr 1fr 2fr 2fr
 	justify-items: center
 	align-items: center
 	box-sizing: border-box
@@ -159,19 +153,15 @@
 	
 
 .generator__model
+	display: flex
+	justify-content: stretch
+	align-items: center
+	height: 100%
 	border-right: 1px #0066b1 solid
 	position: relative
 	+media(tablet)
 		border: none
 		text-align: center
-	// &:before
-	// 	content: ''
-	// 	position: absolute
-	// 	top: 0
-	// 	right: 0
-	// 	width: 2px
-	// 	background: red
-
 
 .generator__model_text
 	display: none
@@ -179,6 +169,10 @@
 		display: block
 		text-transform: uppercase
 		color: #6D6E7A
+
+.generator__model_name
+	padding-right: 10px
+
 
 .generator__item_title
 	display: none
@@ -189,6 +183,11 @@
 		font-size: rem(13px)
 
 .extra__power
+	padding-right: 40px
+	display: flex
+	justify-content: 
+	align-items: center
+	height: 100%
 	border-right: 1px #0066b1 solid
 	+media(tablet)
 		border: none
@@ -200,6 +199,9 @@
 	border-right: 1px #0066b1 solid
 	+media(tablet)
 		border-right: 1px #0066b1 solid
+
+.extra__power_kw
+	box-sizing: border-box
 
 .extra__power span
 	+media(tablet)
@@ -215,6 +217,8 @@
 		font-weight: normal
 
 .generator__engine_name
+	padding-right: 40px
+	height: 100%
 	border-right: 1px #0066b1 solid
 	+media(tablet)
 		display: none
