@@ -40,69 +40,103 @@ html(lang="en")
 							a.generator__navigation_item(href="#") 201-400 kVA
 							a.generator__navigation_item(href="#") 401-999 kVA
 							a.generator__navigation_item(href="#") 1000 kVA Выше
-				.generator__info
-					ul.generator__list
-						li.generator__item
-								.custom-control.custom-checkbox.custom-checkbox-a
-									input#defaultChecked2.custom-control-input(type="checkbox" checked="")
-									label.custom-control-label(for="defaultChecked2") СРАВНИТЬ
-								a.generator__img(href="#")
-									img.generator__img(src="../img/model/APD 17A-6.jpg", alt="")
-								.generator__model
-									span.generator__model_text model: 
-									a.generator__model_name(href="#") APD 12 A
-								h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
-								.extra__power
-									span.extra__power_kva 11,50 kVA
-									span.extra__power_kw 9,20 kW
-								h3.generator__item_title Основная мощность
-								.extra__power
-									span.extra__power_kva 10,60 kVA
-									span.extra__power_kw 8,48 kW
-								h3.generator__item_hz 50 hz
-								h3.generator__item_hz Двигатель: АКSA
-								span.generator__engine_name AKSA
-								.generator__buttons
-									a.btn__icons(href="#")
-										i.fa.fa-eye
-									a.btn__icons(href="#")
-										i.fa.fa-arrow-circle-down
-									a.btn__get(href="#") Get an Offer
-						li.generator__item
-								.custom-control.custom-checkbox.custom-checkbox-a
-									input#defaultChecked2.custom-control-input(type="checkbox" checked="")
-									label.custom-control-label(for="defaultChecked2") СРАВНИТЬ
-								a.generator__img(href="#")
-									img.generator__img(src="../img/model/APD 17A-6.jpg", alt="")
-								.generator__model
-									span.generator__model_text model: 
-									a.generator__model_name(href="#") APD 12 A
-								h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
-								.extra__power
-									span.extra__power_kva 11,50 kVA
-									span.extra__power_kw 9,20 kW
-								h3.generator__item_title Основная мощность
-								.extra__power
-									span.extra__power_kva 10,60 kVA
-									span.extra__power_kw 8,48 kW
-								h3.generator__item_hz 50 hz
-								h3.generator__item_hz Двигатель: АКSA
-								.generator__buttons
-									a.btn__icons(href="#")
-										i.fa.fa-eye
-									a.btn__icons(href="#")
-										i.fa.fa-arrow-circle-down
-									a.btn__get(href="#") Get an Offer
+				.container
+					.generator__info
+						.generator__titles
+							select.generator__select(name="quantity")
+								option(value="") 20
+								option(value="") 50
+								option(value="") Выбрать все
+							h2.generator__model_title MODEL
+							.generator__power
+								span.generator__power_title дополнительная мощность
+								span.generator__power_kva kva
+								span.generator__power_kw kw
+							.generator__power
+								span.generator__power_title дополнительная мощность
+								span.generator__power_kva kva
+								span.generator__power_kw kw
+							h2.generator__model_title hz
+							h2.generator__model_title Двигатель
+							h2.generator__model_title Более подробная информация
+							
+						ul.generator__list
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../img/model/APD 17A-6.jpg", alt="")
+									.generator__model
+										//- span.generator__model_text model: 
+										a.generator__model_name(href="#") APD 12 A
+									//- h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 11,50 kVA
+										span.extra__power_kw 9,20 kW
+									//- h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 10,60 kVA
+										span.extra__power_kw 8,48 kW
+									//- h3.generator__item_hz 50 hz
+									//- h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name AKSA
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="#") Get an Offer
+							li.generator__item
+									.desktop__block
+										.custom-control.custom-checkbox.custom-checkbox-a
+											input#defaultChecked2.custom-control-input(type="checkbox" checked="")
+											label.custom-control-label(for="defaultChecked2")
+												span.compare СРАВНИТЬ
+										a.generator__img(href="#")
+											img(src="../img/model/APD 17A-6.jpg", alt="")
+									.generator__model
+										span.generator__model_text model: 
+										a.generator__model_name(href="#") APD 12 A
+									h3.generator__item_title ДОПОЛНИТЕЛЬНАЯ МОЩНОСТЬ
+									.extra__power
+										span.extra__power_kva 11,50 kVA
+										span.extra__power_kw 9,20 kW
+									h3.generator__item_title Основная мощность
+									.extra__power
+										span.extra__power_kva 10,60 kVA
+										span.extra__power_kw 8,48 kW
+									h3.generator__item_hz 50 hz
+									h3.generator__item_hz Двигатель: АКSA
+									span.generator__engine_name 50
+									span.generator__engine_name AKSA
+									.generator__buttons
+										a.btn__icons(href="#")
+											i.fa.fa-eye
+										a.btn__icons(href="#")
+											i.fa.fa-arrow-circle-down
+										a.btn__get(href="#") Get an Offer
 				.page__switching
 					ul.switching__list
-						li.switching__item.switching__item_active 1
-						li.switching__item 2
-						li.switching__item 3
-						li.switching__item 4
-						li.switching__item 5
-						li.switching__item 6
-						li.switching__item 7
-						li.switching__item.switching__item_active 8 &#62;
+						li.switching__item.switching__item_active 
+							a.switching__item_link(href="#") 1
+						li.switching__item 
+							a.switching__item_link(href="#") 2
+						li.switching__item 
+							a.switching__item_link(href="#") 3
+						li.switching__item 
+							a.switching__item_link(href="#") 4
+						li.switching__item 
+							a.switching__item_link(href="#") 5
+						li.switching__item 
+							a.switching__item_link(href="#") 6
+						li.switching__item 
+							a.switching__item_link(href="#") 7
+						li.switching__item.switching__item_active 
+							a.switching__item_link(href="#") 8 &#62;
 				
 		include ../footer.pug
 
