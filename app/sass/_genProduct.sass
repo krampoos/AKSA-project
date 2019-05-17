@@ -1,11 +1,13 @@
 .container
-	max-width: 1100px
+	max-width: 100%
 	overflow: hidden
 	margin: 0 auto
 	+media(tablet)
-		max-width: 768px
+		max-width: 655px
 	+media(phone)
 		max-width: 360px
+
+
 .secondPage__img
 	+media(tablet)
 		overflow: hidden
@@ -15,6 +17,7 @@
 	width: 100%
 	height: 60vh
 	+media(tablet)
+		margin-top: rem(62px)
 		width: 100%
 		height: 35vh
 
@@ -74,19 +77,6 @@
 	margin-top: 20px
 	+media(tablet)
 		padding: rem(15px)
-.generator__titles
-	// display: flex
-	// justify-content: space-around
-	// text-align: center
-	display: grid
-	grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr 2fr
-	justify-items: start
-	+media(tablet)
-		display: none
-
-.generator__select
-	width: 60%
-	height: 50%
 
 .generator__model_title
 	text-align: center
@@ -98,11 +88,13 @@
 	padding: 0
 
 .generator__power
+	padding-right: 40px
 	display: flex
 	justify-content: space-around
 	flex-wrap: wrap
 
 .generator__power_title
+	width: 100%
 	text-align: center
 	color: #0066b1
 	font-weight: bold
@@ -116,35 +108,43 @@
 	color: #6d6e71
 	font-size: rem(19px)
 
-
 .generator__item
 	// display: flex
 	// justify-content: space-around
 	// align-items: center
 	display: grid
-	grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr 2fr
+	grid-template-columns: 1fr 1fr 3fr 3fr 1fr 2fr 2fr
 	justify-items: center
 	align-items: center
 	box-sizing: border-box
 	border: 1px #0066b1 solid
 	margin-bottom: 10px
 	+media(tablet)
+		display: flex
 		flex-flow: column
+		align-items: center
 		justify-content: center
 		text-transform: uppercase
 		margin-bottom: 15px
 
 .desktop__block
+	display: flex
+	justify-content: stretch
+	align-items: center
 	// width: 80%
-	border-right: 1px #0066b1 solid
+	// border-right: 1px #0066b1 solid
 	+media(tablet)
+		margin-top: rem(20px)
+		display: block
 		border: none
+
+.custom-control
+	margin-left: 10px
 
 .compare
 	display: none
 	+media(tablet)
 		display: block
-
 
 .generator__img img
 	width: 100px
@@ -160,19 +160,15 @@
 	
 
 .generator__model
-	border-right: 1px #0066b1 solid
+	display: flex
+	justify-content: stretch
+	align-items: center
+	height: 100%
+	// border-right: 1px #0066b1 solid
 	position: relative
 	+media(tablet)
 		border: none
 		text-align: center
-	// &:before
-	// 	content: ''
-	// 	position: absolute
-	// 	top: 0
-	// 	right: 0
-	// 	width: 2px
-	// 	background: red
-
 
 .generator__model_text
 	display: none
@@ -180,6 +176,10 @@
 		display: block
 		text-transform: uppercase
 		color: #6D6E7A
+
+.generator__model_name
+	padding-right: 10px
+
 
 .generator__item_title
 	display: none
@@ -190,17 +190,29 @@
 		font-size: rem(13px)
 
 .extra__power
-	border-right: 1px #0066b1 solid
+	padding-right: rem(40px)
+	display: flex
+	justify-content: 
+	align-items: center
+	height: 100%
+	// border-right: 1px #0066b1 solid
 	+media(tablet)
+		padding-right: rem(13px)
 		border: none
 		color: #6D6E7A
 		display: flex
 		justify-content: center
 
 .extra__power_kva
-	border-right: 1px #0066b1 solid
+	// border-right: 1px #0066b1 solid
 	+media(tablet)
 		border-right: 1px #0066b1 solid
+
+.extra__power_kw
+	margin-left: rem(33px)
+	box-sizing: border-box
+	+media(tablet)
+		margin: rem(0px)
 
 .extra__power span
 	+media(tablet)
@@ -216,7 +228,11 @@
 		font-weight: normal
 
 .generator__engine_name
-	border-right: 1px #0066b1 solid
+	display: flex
+	justify-content: stretch
+	align-items: center
+	height: 100%
+	// border-right: 1px #0066b1 solid
 	+media(tablet)
 		display: none
 
@@ -235,7 +251,7 @@
 	+media(tablet)
 		margin: 0 5px
 		color: #ffffff
-		padding: 10px
+		padding: 10px 14px
 
 .btn__icons
 	margin-right: 10px
@@ -275,3 +291,7 @@
 	margin-right: 20px
 	+media(tablet)
 		margin: 0 10px
+
+.generator__item_active
+	+media(tablet)
+		display: none
