@@ -18,7 +18,7 @@ html(lang="en")
 		sectiom.forProd
 			.img
 		section.APD12
-			div.container
+			div.secContainer
 				h3.apd__title APD 12 A
 				.seperator
 				.product
@@ -33,33 +33,47 @@ html(lang="en")
 						p.product__paraph 
 							| МОДЕЛЬ ПОНЕЛИ УПРАВЛЕНИЯ: 
 							span DSE 6020
-						.accordion
+					.accordion
 							dl
 								dt
-									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion1" aria-expanded="false" aria-controls="accordion1") First Accordion heading
+									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion1" aria-expanded="false" aria-controls="accordion1") О продукте
 								dd#accordion1.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
 									p
-										| Lorem ipsum dolor sit amet, consectetur 
-										a(href="https://www.google.com") Test
-										| adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.
-									p
-										| Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.
+										|Aksa power generation system, providing optimum performance, and reliability, for stationary standby, prime power, and continuous duty applications. All generator sets are factory build, and production tested.
 								dt
 									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion2" aria-expanded="false" aria-controls="accordion2")
-										| Second Accordion heading
+										| СЕРТИФИКАТЫ
 								dd#accordion2.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
-									p
-										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.
-									p
-										| Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.
+									p TS ISO 8528
+									p CE
+									p SZUTEST
+									p 2000/14/EC
 								dt
 									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion3" aria-expanded="false" aria-controls="accordion3")
-										| Third Accordion heading
+										| Общие Характеристики
 								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
-									p
-										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.
-									p
-										| Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.
+									table.table
+										tr.table-column
+											td.column-item Название Модели
+											td.column-item APD 12 A
+										tr.table-column
+											td.column-item Частота (Гц)
+											td.column-item 50
+										tr.table-column
+											td.column-item вид используемого топлива
+											td.column-item Diesel
+										tr.table-column
+											td.column-item бренд и модель двигателя
+											td.column-item AKSA - A3CRX14
+										tr.table-column
+											td.column-item генератор переменного тока марки и модели
+											td.column-item Aksa - AK 109 
+										tr.table-column
+											td.column-item Модель панели управления
+											td.column-item DSE 6020 
+										tr.table-column 
+											td.column-item кожуха
+											td.column-item ANS 1
 
 		include ../footer.pug
 
