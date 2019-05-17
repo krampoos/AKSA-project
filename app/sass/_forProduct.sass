@@ -2,6 +2,10 @@
 	max-width: 81.25rem
 	overflow: hidden
 	margin: 0 auto
+	+media(desktop)
+		max-width: 68.75rem
+		overflow: hidden
+		margin: 0 auto
 .forProd
 		.img
 				margin-top: 3rem
@@ -101,7 +105,7 @@
 	transition: max-height 1s
 
 	@media screen and (min-width: 48em)
-		max-height: 15em
+		max-height: 40em
 		transition: max-height 0.5s
 
 .accordionItem.is-collapsed
