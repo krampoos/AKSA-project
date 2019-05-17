@@ -1,52 +1,20 @@
 .navBar
 	.navBarWrap
 		.navBarLogo
-			img.logogImg(src="../img/logo.png", alt="logo")
+			a.navBarLogo_link(href="index.html")
+				img.logogImg(src="../img/logo.png", alt="logo")
 		.navBarList
 			ul.navList.navList__responsive
-				li.navItem КОРПОРАТИВНЫЕ
-					span.fas.fa-sort-down
-					div.linkWrap1
-						p.link
-							a(href="forProduct.html") ОБ AKSA
-						p.link
-							a(href="#") KAZANCI ХОЛДИНГ
-						p.link
-							a(href="#") ИСТОРИЯ
-						p.link
-							a(href="#").navItem КОРПОРИТИВНЫЕ ИЗДАНИЯ
-						p.link
-							a(href="#") КОРПОРИТИВНАЯ КУЛЬТУРА
-						p.link
-							a(href="#") ФИРМЕННЫЙ СТИЛЬ
-						p.link
-							a(href="#") СОВЕТ ДИРЕКТОРОВ
-						p.link
-							a(href="#") ИНФОРМАЦИЯ О КОМПАНИИ
-						p.link
-							a(href="#") AKSA И ОКРУЖАЮЩАЯ СРЕДА
-						p.link
-							a(href="#") ФОРМА ЗАЯВКИ
-						p.link
-							a(href="#") ПОЛИТИКА БЕЗОПАСНОСТИ
+				li.navItem
+					a.navItem_link(href="#") О Компании
 				li.navItem ПРОДУКТЫ
 					span.fas.fa-sort-down
 					div.linkWrap6
 						p.link
 							a(href="genProduct.html") ДИЗЕЛЬНЫЕ ГЕНЕРАТОРНЫЕ УСТОНОВКИ
-						p.link
-							a(href="#") ПОРТАТИВНЫЕ ГЕНЕРАТОРНЫЕ УСТОНОВКИ
-						p.link
-							a(href="#") ГЕНЕРАТОРНЫЕ УСТОНОВКИ ПРИРОДНОГО ГАЗА
-						p.link
-							a(href="#") МОРСКОЙ
-						p.link
-							a(href="#") ОСВЕТИТЕЛЬНЫЕ МАЧТЫ
 				li.navItem УСЛУГИ
 					span.fas.fa-sort-down
 					div.linkWrap4
-							p.link
-								a(href="#") АРЕНДА
 							p.link
 								a(href="#") ПРОДАЖИ И ЗАКУПКИ
 							p.link
@@ -66,33 +34,19 @@
 		#navbarNavDropdown.collapse.navbar-collapse
 			ul.navbar-nav
 				li.nav-item.dropdown.bg-more-dark
-					a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")  КОРПОРАТИВНЫЕ
-					.dropdown-menu(aria-labelledby="navbarDropdownMenuLink")
-						a.dropdown-item(href="./2/aksa.pug") ОБ AKSA
-						a.dropdown-item(href="#") KAZANCI ХОЛДИНГ
-						a.dropdown-item(href="#") ИСТОРИЯ
-						a.dropdown-item(href="#") КОРПОРИТИВНЫЕ ИЗДАНИЯ
-						a.dropdown-item(href="#") КОРПОРИТИВНАЯ КУЛЬТУРА
-						a.dropdown-item(href="#") ФИРМЕННЫЙ СТИЛЬ
-						a.dropdown-item(href="#") СОВЕТ ДИРЕКТОРОВ
-						a.dropdown-item(href="#") ИНФОРМАЦИЯ О КОМПАНИИ
-						a.dropdown-item(href="#") AKSA И ОКРУЖАЮЩАЯ СРЕДА
-						a.dropdown-item(href="#") ФОРМА ЗАЯВКИ
-						a.dropdown-item(href="#") ПОЛИТИКА БЕЗОПАСНОСТИ
+					a#navbarDropdownMenuLink.nav-link(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+						a.navItem_link(href="#") О Компанииы
+					
 				li.nav-item.dropdown.bg-more-dark
 					a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") ПРОДУКТЫ
 					.dropdown-menu(aria-labelledby="navbarDropdownMenuLink")
 						a.dropdown-item(href="genProduct.html") ДИЗЕЛЬНЫЕ ГЕНЕРАТОРНЫЕ УСТОНОВКИ
-						a.dropdown-item(href="#") ПОРТАТИВНЫЕ ГЕНЕРАТОРНЫЕ УСТОНОВКИ
-						a.dropdown-item(href="#") ГЕНЕРАТОРНЫЕ УСТОНОВКИ ПРИРОДНОГО ГАЗА
-						a.dropdown-item(href="#") МОРСКОЙ
-						a.dropdown-item(href="#") ОСВЕТИТЕЛЬНЫЕ МАЧТЫ
 				li.nav-item.dropdown.bg-more-dark
 					a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") УСЛУГИ
 					.dropdown-menu(aria-labelledby="navbarDropdownMenuLink")
-						a.dropdown-item(href="#") АРЕНДА
-						a.dropdown-item(href="#") ПРОДАЖИ И ЗАКУПКИ
-						a.dropdown-item(href="#") AGRP
-						a.dropdown-item(href="#") ПОСЛЕПРОДАЖНОЕ ОБСЛУЖИВАНИЕ 
+						a.dropdown-item(href="#") Обслуживание
+						a.dropdown-item(href="#") Периодическое обслуживание
+						a.dropdown-item(href="#") Запчасти
+						a.dropdown-item(href="#") Мощность и размещение на поверхности
 				li.nav-item.bg-more-dark
-					a.nav-link(href='#') СВЯЗАТЬСЯ С НАМИ
+					a.nav-link(href='#') КОНТАКТЫ
