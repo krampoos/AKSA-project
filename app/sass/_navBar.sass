@@ -47,7 +47,16 @@
 		left: 0
 		border-top: 1px solid #393939
 
-
+.navItem_link
+	color: #fff
+	+media(tablet)
+		color: rgba(255,255,255,.5)
+		font-size: 1rem
+	&:hover
+		color: #fff
+		+media(tablet)
+			font-size: 1rem
+			color: rgba(255,255,255,.5)
 
 
 .navItem
@@ -61,18 +70,6 @@
 	+media(tablet)
 		margin: rem(20px)
 		display: block
-
-.navItem_link
-	color: #fff
-	+media(tablet)
-		color: rgba(255,255,255,.5)
-		font-size: 1rem
-	&:hover
-		color: #fff
-		+media(tablet)
-			font-size: 1rem
-			color: rgba(255,255,255,.5)
-
 
 	&:hover
 		.linkWrap1
