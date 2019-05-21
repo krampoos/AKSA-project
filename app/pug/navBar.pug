@@ -6,22 +6,16 @@
 		.navBarList
 			ul.navList.navList__responsive
 				li.navItem
-					a.navItem_link(href="#") О Компании
+					a.navItem_link(href="about.html") О Компании
 				li.navItem ПРОДУКТЫ
 					span.fas.fa-sort-down
 					div.linkWrap6
 						p.link
 							a(href="genProduct.html") ДИЗЕЛЬНЫЕ ГЕНЕРАТОРНЫЕ УСТОНОВКИ
-				li.navItem УСЛУГИ
-					span.fas.fa-sort-down
-					div.linkWrap4
-							p.link
-								a(href="#") ПРОДАЖИ И ЗАКУПКИ
-							p.link
-								a(href="#") AGRP
-							p.link
-								a(href='#') ПОСЛЕПРОДАЖНОЕ ОБСЛУЖИВАНИЕ
-				li.navItem СВЯЗАТЬСЯ С НАМИ
+				li.navItem 
+					a.navItem_link(href="service.html") УСЛУГИ
+				li.navItem
+					a.navItem_link(href="contacts.html") КОНТАКТЫ
 
 .navBar__mobile
 	.navBarWrap
@@ -35,18 +29,13 @@
 			ul.navbar-nav
 				li.nav-item.dropdown.bg-more-dark
 					a#navbarDropdownMenuLink.nav-link(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
-						a.navItem_link(href="#") О Компанииы
+						a.navItem_link(href="about.html") О Компанииы
 					
 				li.nav-item.dropdown.bg-more-dark
 					a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") ПРОДУКТЫ
 					.dropdown-menu(aria-labelledby="navbarDropdownMenuLink")
 						a.dropdown-item(href="genProduct.html") ДИЗЕЛЬНЫЕ ГЕНЕРАТОРНЫЕ УСТОНОВКИ
 				li.nav-item.dropdown.bg-more-dark
-					a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") УСЛУГИ
-					.dropdown-menu(aria-labelledby="navbarDropdownMenuLink")
-						a.dropdown-item(href="#") Обслуживание
-						a.dropdown-item(href="#") Периодическое обслуживание
-						a.dropdown-item(href="#") Запчасти
-						a.dropdown-item(href="#") Мощность и размещение на поверхности
+					a.nav-link(href='service.html') УСЛУГИ
 				li.nav-item.bg-more-dark
-					a.nav-link(href='#') КОНТАКТЫ
+					a.nav-link(href='contacts.html') КОНТАКТЫ

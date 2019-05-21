@@ -52,28 +52,69 @@ html(lang="en")
 									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion3" aria-expanded="false" aria-controls="accordion3")
 										| Общие Характеристики
 								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
-									table.table
-										tr.table-column
-											td.column-item Название Модели
-											td.column-item APD 12 A
-										tr.table-column
-											td.column-item Частота (Гц)
-											td.column-item 50
-										tr.table-column
-											td.column-item вид используемого топлива
-											td.column-item Diesel
-										tr.table-column
-											td.column-item бренд и модель двигателя
-											td.column-item AKSA - A3CRX14
-										tr.table-column
-											td.column-item генератор переменного тока марки и модели
-											td.column-item Aksa - AK 109 
-										tr.table-column
-											td.column-item Модель панели управления
-											td.column-item DSE 6020 
-										tr.table-column 
-											td.column-item кожуха
-											td.column-item ANS 1
+									table#tabloMotorOzellik.table.table-bordered.urunDetayTablo.alignLeft
+										tr
+											th(colspan="2")
+											| Название Модели
+											td(colspan="2")
+											| APD 12 A
+											br
+										tr
+											th(colspan="2")
+											| Частота  (Гц)
+											td(colspan="2")
+											| 50
+											br
+										tr
+											th(colspan="2")
+											| вид используемого топлива
+											td(colspan="2")
+											| Diesel
+											br
+										tr
+											th(colspan="2")
+											| бренд и модель двигателя
+											td(colspan="2")
+											| AKSA - A3CRX14
+											br
+										tr
+											th(colspan="2")
+											| генератор переменного тока марки и модели
+											td(colspan="2")
+											| Aksa - AK 109 
+											br
+										tr
+											th(colspan="2")
+											| Модель панели управления
+											td(colspan="2")
+											| DSE 6020 
+											br
+										tr
+											th(colspan="2")
+											| кожуха
+											td(colspan="2")
+											| ANS 1
+										a.acc-trigger(href="javascript:;") 3 Количество фаз, 50 Hz, PF 0.8
+										.acc-content
+										.table-responsive
+											table.table.table-bordered.urunDetayTablo
+											tr
+												th(rowspan="2") Напряжение (В)
+												th(colspan="2") Мощность Standby
+												th(colspan="2") Мощность Prime
+												th(rowspan="2") Standby Amper
+											tr.subtitle
+												th kVA
+												th kW
+												th kVA
+												th kW
+											tr
+												td 400/231
+												td 11.5
+												td 9.20
+												td 10.6
+												td 8.48
+												td 16.60
 
 		include ../footer.pug
 
