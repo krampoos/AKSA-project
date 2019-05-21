@@ -19,21 +19,25 @@ html(lang="en")
 			.img
 		section.APD12
 			div.secContainer
-				h3.apd__title APD 12 A
-				.seperator
+				.apd__title-block
+					h3.apd__title12 APD 12 A
 				.product
-					h3.product__title ПРОДУКТЫ
-					div.product__info
-						p.product__paraph 
-							| ПРОДУКТЫ : 
-							span AKSA
-						p.product__paraph 
-							| ГЕНЕРАТОР: 
-							span AK 109 
-						p.product__paraph 
-							| МОДЕЛЬ ПОНЕЛИ УПРАВЛЕНИЯ: 
-							span DSE 6020
-					.accordion
+					a.product__btn(href='#') ПРОДУКТЫ
+				div.product__info
+					p.product__paraph 
+						| ПРОДУКТЫ : 
+						span AKSA
+					p.product__paraph 
+						| ГЕНЕРАТОР: 
+						span AK 109 
+					p.product__paraph 
+						| МОДЕЛЬ ПОНЕЛИ УПРАВЛЕНИЯ: 
+						span DSE 6020
+
+				.img-block
+					img.img-block__img(src="./img/forProduct/APD 17A-6.jpg", alt="#")
+					img.img-block__img(src="./img/forProduct/ANS 1-1A.jpg", alt="#")
+				.accordion
 							dl
 								dt
 									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion1" aria-expanded="false" aria-controls="accordion1") О продукте
@@ -52,53 +56,55 @@ html(lang="en")
 									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion3" aria-expanded="false" aria-controls="accordion3")
 										| Общие Характеристики
 								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
-<<<<<<< HEAD
 									table#tabloMotorOzellik.table.table-bordered.urunDetayTablo.alignLeft
-										tr
-											th(colspan="2")
-											| Название Модели
-											td(colspan="2")
-											| APD 12 A
-											br
-										tr
-											th(colspan="2")
-											| Частота  (Гц)
-											td(colspan="2")
-											| 50
-											br
-										tr
-											th(colspan="2")
-											| вид используемого топлива
-											td(colspan="2")
-											| Diesel
-											br
-										tr
-											th(colspan="2")
-											| бренд и модель двигателя
-											td(colspan="2")
-											| AKSA - A3CRX14
-											br
-										tr
-											th(colspan="2")
-											| генератор переменного тока марки и модели
-											td(colspan="2")
-											| Aksa - AK 109 
-											br
-										tr
-											th(colspan="2")
-											| Модель панели управления
-											td(colspan="2")
-											| DSE 6020 
-											br
-										tr
-											th(colspan="2")
-											| кожуха
-											td(colspan="2")
-											| ANS 1
-										a.acc-trigger(href="javascript:;") 3 Количество фаз, 50 Hz, PF 0.8
-										.acc-content
-										.table-responsive
-											table.table.table-bordered.urunDetayTablo
+										tbody
+											tr
+												th(colspan="2")
+													| Название Модели
+												td(colspan="2")
+													| APD 12 A
+													br
+											tr
+												th(colspan="2")
+													| Частота  (Гц)
+												td(colspan="2")
+													| 50
+													br
+											tr
+												th(colspan="2")
+													| вид используемого топлива
+												td(colspan="2")
+													| Diesel
+													br
+											tr
+												th(colspan="2")
+													| бренд и модель двигателя
+												td(colspan="2")
+													| AKSA - A3CRX14
+													br
+											tr
+												th(colspan="2")
+													| генератор переменного тока марки и модели
+												td(colspan="2")
+													| Aksa - AK 109 
+													br
+											tr
+												th(colspan="2")
+													| Модель панели управления
+												td(colspan="2")
+													| DSE 6020 
+													br
+											tr
+												th(colspan="2")
+													| кожуха
+												td(colspan="2")
+													| ANS 1
+								dt
+									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion3" aria-expanded="false" aria-controls="accordion3")
+										| 3 Количество фаз, 50 Hz, PF 0.8
+								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
+									table.table.table-bordered.urunDetayTablo
+										tbody
 											tr
 												th(rowspan="2") Напряжение (В)
 												th(colspan="2") Мощность Standby
@@ -116,51 +122,7 @@ html(lang="en")
 												td 10.6
 												td 8.48
 												td 16.60
-=======
-									table.table
-										tr.table-column
-											td.column-item Название Модели
-											td.column-item APD 12 A
-										tr.table-column
-											td.column-item Частота (Гц)
-											td.column-item 50
-										tr.table-column
-											td.column-item вид используемого топлива
-											td.column-item Diesel
-										tr.table-column
-											td.column-item бренд и модель двигателя
-											td.column-item AKSA - A3CRX14
-										tr.table-column
-											td.column-item генератор переменного тока марки и модели
-											td.column-item Aksa - AK 109 
-										tr.table-column
-											td.column-item Модель панели управления
-											td.column-item DSE 6020 
-										tr.table-column 
-											td.column-item кожуха
-											td.column-item ANS 1
-								dt
-									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion3" aria-expanded="false" aria-controls="accordion3")
-										| 3 Количество фаз, 50 Hz, PF 0.8
-								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
-									table.table
-										tr.table-column
-											td.column-item(rowspan='2') Название Модели
-											td.column-item(colspan='2') Мощность Standby
-											td.column-item(colspan='2') Мощность Prime
-											td.column-item(rowspan='2') Мощность Prime
-										tr.table-column
-											td.column-item kVA
-											td.column-item kW
-											td.column-item kVA
-											td.column-item kW
-										tr.table-column
-											td.column-item 400/231
-											td.column-item 11.5
-											td.column-item 9.20
-											td.column-item 10.6
-											td.column-item 8.48
-											td.column-item 16.60
+
 									p
 										span.span-table Мощность Standby : 
 										| Используется при подаче электроэнергии переменной электрической нагрузке в случае прерывания надежного источники сети. ESP совместим с ISO8528. Перегрузка не допускается.
@@ -171,173 +133,292 @@ html(lang="en")
 									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion3" aria-expanded="false" aria-controls="accordion3")
 										| двигатель особенность
 								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
-									table.table
-										tr.table-column
-											td.column-item двигатель
-											td.column-item AKSA
-										tr.table-column
-											td.column-item Инженерная модель
-											td.column-item A3CRX14
-										tr.table-column
-											td.column-item Число цилиндров
-											td.column-item 3 cylinders - in line
-										tr.table-column
-											td.column-item(colspan='2') Диаметр поршня x Ход поршня
-											td.column-item(axis='mm') mm
-											td.column-item(axis='mm') 80 X 90
-										tr.table-column
-											td.column-item Объем цилиндров
-											td.column-item L
-											td.column-item 1,36
-										tr.table-column
-											td.column-item Забор воздуха и охлаждение
-											td.column-item 	Naturally Aspirated
-										tr.table-column
-											td.column-item Степень сжатия
-											td.column-item 18:1
-										tr.table-column
-											td.column-item скорость
-											td.column-item d/dk
-											td.column-item 1500
-										tr.table-column
-											td.column-item Объем масла в двигателе (включая фильтр) (L)
-											td.column-item L
-											td.column-item 4
-										tr.table-column
-											td.column-item дополнительная мощность
-											td.column-item 12.8/17.16
-										tr.table-column
-											td.column-item Основная мощность
-											td.column-item 11.7/15.68
-										tr.table-column
-											td.column-item Количество подогревателей блока
-											td.column-item 	1
-										tr.table-column
-											td.column-item Мощность подогревателя блока
-											td.column-item 500
-										tr.table-column
-											td.column-item вид используемого топлива
-											td.column-item Diesel
-										tr.table-column
-											td.column-item Топливная система и тип
-											td.column-item Direct
-										tr.table-column
-											td.column-item Тип ТНВД
-											td.column-item Direct
-										tr.table-column
-											td.column-item Регулятор частоты вращения двигателя
-											td.column-item Mechanic
-										tr.table-column
-											td.column-item рабочее напряжение
-											td.column-item 12 Vdc
-										tr.table-column
-											td.column-item емкость аккумулятора (Qty/Ah)
-											td.column-item 1x36
-										tr.table-column
-											td.column-item Способ охдаждения
-											td.column-item Water Cooled
-										tr.table-column
-											td.column-item Воздушный поток вентилятора (м3/мин)
-											td.column-item 192
-										tr.table-column
-											td.column-item Объем Охлаждающей Жидкости(Только с Двигателем/Радиатором)(л)
-											td.column-item 18,5
-										tr.table-column
-											td.column-item воздушный фильтр
-											td.column-item Dry Type
-										tr.table-column
-											td.column-item Расход топлива при 100% нагрузке (л/ч)
-											td.column-item 3,4
-										tr.table-column
-											td.column-item Расход топлива при 75% нагрузке (л/ч)
-											td.column-item 2,6
-										tr.table-column
-											td.column-item Расход топлива при 50% нагрузке (л/ч)
-											td.column-item 1,7
+									table#tabloMotorOzellik.table.table-bordered.urunDetayTablo.alignLeft
+										tbody
+											tr
+												th(colspan="2")
+													| двигатель
+												td(colspan="2")
+													| AKSA
+													br
+											tr
+												th(colspan="2")
+													| Инженерная модель
+												td(colspan="2")
+													| A3CRX14
+											tr
+												th(colspan="2")
+													| Число цилиндров
+												td(colspan="2")
+													| 3 cylinders - in line
+											tr
+												th
+													| Диаметр поршня x  Ход поршня
+												th.unit
+													| mm
+												td(colspan="2")
+													| 80 X 90
+											tr
+												th
+													| Объем цилиндров
+												th.unit
+													| L
+												td(colspan="2")
+													| 1,36
+											tr
+												th(colspan="2")
+													| Забор воздуха и охлаждение
+												td(colspan="2")
+													| Naturally Aspirated
+											tr
+												th(colspan="2")
+													| Степень сжатия
+												td(colspan="2")
+													| 18:1
+											tr
+												th
+													| скорость
+												th.unit
+													| d/dk
+												td(colspan="2")
+													| 1500
+											tr
+												th
+													| Объем масла в двигателе (включая фильтр) (L)
+												th.unit
+													| L
+												td(colspan="2")
+													| 4
+											tr
+												th.col1(colspan="2")
+													| дополнительная мощность
+												td(colspan="2")
+													| 12.8/17.16
+											tr
+												th.col1(colspan="2")
+													| Основная мощность
+												td(colspan="2")
+													| 11.7/15.68
+											tr
+												th.col1(rowspan="2")
+													| Количество подогревателей блока
+											tr
+												th.unit
+												td(colspan="2")
+													| 1
+											tr
+												th.col1(rowspan="2")
+													| Мощность подогревателя блока
+											tr
+												th.unit
+												td(colspan="2")
+													| 500
+											tr
+												th.col1(rowspan="2")
+													| вид используемого топлива
+											tr
+												th.unit
+												td(colspan="2")
+													| Diesel
+											tr
+												th.col1(rowspan="2")
+													| Топливная система и тип
+											tr
+												th.unit
+												td(colspan="2")
+													| Direct
+											tr
+												th.col1(rowspan="2")
+													| Тип ТНВД
+											tr
+												th.unit
+												td(colspan="2")
+													| Direct
+											tr
+												th.col1(rowspan="2")
+													| Регулятор частоты вращения двигателя
+											tr
+												th.unit
+												td(colspan="2")
+													| Mechanic
+											tr
+												th.col1(rowspan="2")
+													| рабочее напряжение
+											tr
+												th.unit
+												td(colspan="2")
+													| 12 Vdc
+											tr
+												th.col1(rowspan="2")
+													| емкость аккумулятора (Qty/Ah)
+											tr
+												th.unit
+												td(colspan="2")
+													| 1x36
+											tr
+												th.col1(rowspan="2")
+													| Способ охдаждения
+											tr
+												th.unit
+												td(colspan="2")
+													| Water Cooled
+											tr
+												th.col1(rowspan="2")
+													| Воздушный поток вентилятора (м3/мин)
+											tr
+												th.unit
+												td(colspan="2")
+													| 192
+											tr
+												th.col1(rowspan="2")
+													| Объем Охлаждающей Жидкости(Только с Двигателем/Радиатором)(л)
+											tr
+												th.unit
+												td(colspan="2")
+													| 18,5
+											tr
+												th.col1(rowspan="2")
+													| воздушный фильтр
+											tr
+												th.unit
+												td(colspan="2")
+													| Dry Type
+											tr
+												th.col1(rowspan="2")
+													| Расход топлива при 100% нагрузке (л/ч)
+											tr
+												th.unit
+												td(colspan="2")
+													| 3,4
+											tr
+												th.col1(rowspan="2")
+													| Расход топлива при 75% нагрузке (л/ч)
+											tr
+												th.unit
+												td(colspan="2")
+													| 2,6
+											tr
+												th.col1(rowspan="2")
+													| Расход топлива при 50% нагрузке (л/ч)
+											tr
+												th.unit
+												td(colspan="2")
+													| 1,7
+
 								dt
 									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion3" aria-expanded="false" aria-controls="accordion3")
 										| ТИП АЛЬТЕРНАТОРА
 								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
-									table.table
-										tr.table-column
-											td.column-item Производитель
-											td.column-item AKSA
-										tr.table-column
-											td.column-item генератор переменного тока марки и модели
-											td.column-item AK 109
-										tr.table-column
-											td.column-item Частота (Гц)
-											td.column-item Hz
-											td.column-item 50
-										tr.table-column
-											td.column-item Мощность (кВА)
-											td.column-item kVA
-											td.column-item 11,3
-										tr.table-column
-											td.column-item дизайн
-											td.column-item Brushless
-										tr.table-column
-											td.column-item Напряжение (В)
-											td.column-item V
-											td.column-item 400
-										tr.table-column
-											td.column-item фаза
-											td.column-item 3
-										tr.table-column
-											td.column-item Регулятор напряжения
-											td.column-item SX460
-										tr.table-column
-											td.column-item Система возбуждения
-											td.column-item (+/-)
-											td.column-item 1,5%
-										tr.table-column
-											td.column-item Класс изоляции
-											td.column-item H
-										tr.table-column
-											td.column-item класс защиты
-											td.column-item IP22
-										tr.table-column
-											td.column-item Активная мощность
-											td.column-item 0.8
-										tr.table-column
-											td.column-item охлаждающий воздух
-											td.column-item m3
-											td.column-item 4,26
+									table#tabloAlternatorOzellik.table.table-bordered.urunDetayTablo.alignLeft
+										tbody
+											tr
+												th(colspan="2") Производитель
+												td Aksa
+											tr
+												th(colspan="2") генератор переменного тока марки и модели
+												td AK 109
+											tr
+												th Частота  (Гц)
+												th.unit Hz
+												td 50
+											tr
+												th.col1 Мощность (кВА)
+												th.unit kVA
+												td 11,3
+											tr
+												th(colspan="2") дизайн
+												td   Brushless
+											tr
+												th Напряжение (В)
+												th.unit V
+												td 400
+											tr
+												th(colspan="2") фаза
+												td 3
+											tr
+												th(colspan="2") Регулятор напряжения
+												td SX460
+											tr
+												th Система возбуждения
+												th.unit (+/-)
+												td 1,5%
+											tr
+												th(colspan="2") Класс изоляции
+												td H
+											tr
+												th(colspan="2") класс защиты
+												td IP22
+											tr
+												th(colspan="2") Активная мощность
+												td 0.8
+											tr
+												th охлаждающий воздух
+												th.unit m3
+												td 4,26
+
 								dt
 									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion3" aria-expanded="false" aria-controls="accordion3")
 										| Размеры и вес
 								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden="true")
-									table.table
-										tr.table-column
-											td.column-item Открытый тип
-											td.column-item Вес (Нефть и вода нет) (kg.)
-											td.column-item длина (mm) (mm.)
-											td.column-item ширина (mm) (mm.)
-											td.column-item высота (mm) (mm.)
-											td.column-item Емкость топливного бака (L.) (Lt.)
-										tr.table-column
-											td.column-item 
-												img(src='../../img/forProduct/APD 17A-6.jpg').img-table
-											td.column-item 350
-											td.column-item 1400
-											td.column-item 760
-											td.column-item 927
-											td.column-item 32
-										tr.table-column
-											td.column-item Rожуха
-											td.column-item Вес (Нефть и вода нет) (kg.)
-											td.column-item длина (mm) (mm.)
-											td.column-item ширина (mm) (mm.)
-											td.column-item высота (mm) (mm.)
-											td.column-item Емкость топливного бака (L.) (Lt.)
-										tr.table-column
-											td.column-item 
-												img(src='../../img/forProduct/ANS 1-1A.jpg').img-table
-											td.column-item 470
-											td.column-item 1522
-											td.column-item 823
-											td.column-item 1127
-											td.column-item 32
+									table#tabloBoyutAgirlik.table.table-bordered.urunDetayTablo
+										tbody
+											tr
+												th Открытый тип
+												th
+													| Вес (Нефть и вода нет)
+													br
+													| (kg.)
+												th
+													| длина (mm)
+													br
+													| (mm.)
+												th
+													| ширина (mm)
+													br
+													| (mm.)
+												th
+													| высота (mm)
+													br
+													| (mm.)
+												th Емкость топливного бака (L.) (Lt.)
+											tr
+												td
+													img(src="./img/forProduct/APD 17A-6.jpg" width="70" alt="")
+												td 350 
+												td 1400
+												td 760
+												td 927
+												td 32
+											tr
+												th кожуха
+												th
+													| Вес (Нефть и вода нет)
+													br
+													| (kg.)
+												th
+													| длина (mm)
+													br
+													| (mm.)
+												th
+													| ширина (mm)
+													br
+													| (mm.)
+												th
+													| высота (mm)
+													br
+													| (mm.)
+												th Емкость топливного бака (L.) (Lt.)
+											tr
+												td
+													| ANS 1
+													br
+													img(src="./img/forProduct/ANS 1-1A.jpg" alt="" width="70")
+												td 470
+												td 1522 
+												td 823
+												td 1127
+												td 32
+
 								dt
 									a.accordion-title.accordionTitle.js-accordionTrigger(href="#accordion2" aria-expanded="false" aria-controls="accordion2")
 										| стандартные функции
@@ -388,13 +469,12 @@ html(lang="en")
 										li.table-item Trailer
 										li.table-item Tool kit for maintenance
 
->>>>>>> 26191ad897a1517e1a4ee9a4c45557bd45696937
 
 		include ../footer.pug
 
 	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
 	script(src="./js/script.js")
-	script(src="../js/navBar.js")
+	script(src="./js/navBar.js")
 	script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
 	script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
